@@ -130,7 +130,7 @@ def launch_setup(context, *args, **kwargs):
         PythonLaunchDescriptionSource(launch_file_path=PathJoinSubstitution(
             [pkg_prefix, 'launch/components', 'f1tenth_control.launch.py'])),
         launch_arguments={
-            'lateral_controller_mode': 'pure_pursuit',
+            'lateral_controller_mode': 'lqr',
             'longitudinal_controller_mode': 'pid',
             'vehicle_param_file': vehicle_param_file,
             'nearest_search_param_path': PathJoinSubstitution([pkg_prefix, 'config/control/common/nearest_search.param.yaml']),
