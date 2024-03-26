@@ -5,7 +5,7 @@ cd ~/autoware/src/launcher
 rm -r f1tenth_launch
 ```
 - Add file f1tenth_awsim_05.repos to your autoware folder
-[Link to f1tenth_awsim_05.repos file]: https://www.dropbox.com/scl/fi/bqbyqhqur2kujjo3o13f4/f1tenth_awsim_05.repos?rlkey=3bim7zddcohg7h6y9bp6suy7o&dl=0
+[Link to f1tenth_awsim_05.repos file](https://www.dropbox.com/scl/fi/bqbyqhqur2kujjo3o13f4/f1tenth_awsim_05.repos?rlkey=3bim7zddcohg7h6y9bp6suy7o&dl=0)
 - Inside running container do:
 ```bash
 cd autoware
