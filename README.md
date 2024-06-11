@@ -1,22 +1,3 @@
-# f1tenth_launch - assignment branch
-- Remove the folder and its contents
-```bash
-cd ~/autoware/src/launcher
-rm -r f1tenth_launch
-```
-- Add file f1tenth_awsim_05.repos to your autoware folder
-[Link to f1tenth_awsim_05.repos file](https://www.dropbox.com/scl/fi/bqbyqhqur2kujjo3o13f4/f1tenth_awsim_05.repos?rlkey=3bim7zddcohg7h6y9bp6suy7o&dl=0)
-- Inside running container do:
-```bash
-cd autoware
-sudo apt update
-rosdep update
-vcs import src < f1tenth_awsim_05.repos
-rosdep install --from-paths src --ignore-src -yr
-colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release \
--DCMAKE_EXPORT_COMPILE_COMMANDS=On --packages-up-to f1tenth_launch
-source install/setup.bash
-```
 # f1tenth_launch
 <!-- Required -->
 <!-- Package description -->
